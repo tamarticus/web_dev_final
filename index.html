@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Tamar's Site
+        </title>
+     
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+       
+    <!--button 1:click me
+    button 2: about me
+    button 3: again!
+    button 4: projects
+    button 5: once more 
+    button 6: contact
+    -->
+        
+    
+        <script language="javascript">
+            window.onload = function(){
+            var button1=document.getElementById("button1"); 
+            var button2=document.getElementById("button2");
+            var arrow=document.getElementById("arrow");
+            var button3=document.getElementById("button3");
+            var button4=document.getElementById("button4"); 
+                 var button5=document.getElementById("button5"); 
+                 var button6=document.getElementById("button6"); 
+            button1.onclick = function(){
+            button2.style.visibility="visible";
+            button3.style.visibility="visible";
+            button1.style.display="none";
+                  arrow.style.visibility="hidden";
+            
+            }
+            
+            button3.onclick = function(){
+            button4.style.visibility="visible";
+            button5.style.visibility="visible";
+            button3.style.display="none";     
+            }
+            
+            button5.onclick = function(){
+           
+            button6.style.visibility="visible";
+          
+                 button5.style.display="none"; 
+            }
+            
+            }
+        </script>
+        <div class="message">
+       
+         <img src="images/note.png" class="note" id="arrow">
+             </div>
+        <div class="suggest">
+       
+        <a  class="butn">
+    
+        <img src="images/button.png" class="click" id="button1">
+        </a>
+           
+        
+        <a class="butn3" id="button3">
+        <img src="images/again.png" class="again">
+        
+               
+
+        </a> 
+            <a class="butn5" id="button5">
+        <img src="images/oncemore.png" class="oncemore">
+        
+         </a> 
+
+         </div>
+        
+        <div class="menu">
+        <a class="butn2" id="button2">
+        <img src="images/about.png" class="about">
+        
+         </a> 
+        <a class="butn4" id="button4">
+        <img src="images/projects.png" class="projects">
+        
+         </a> 
+         </a> 
+        <a class="butn6" id="button6">
+        <img src="images/contact.png" class="contact">
+        
+         </a> 
+        </div>
+    </body>
+
+
+</html>

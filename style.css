@@ -1,0 +1,156 @@
+body{
+    position:absolute;
+  display: block;
+background-color: #FFCACC;
+
+width:100%;
+  height: 100%;
+}
+
+.note{
+max-width: 25%;
+
+  
+    
+}
+.message{
+margin-left: 14%;
+    margin-top:2%;
+}
+.suggest{
+margin-top:0%;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+.click{
+position:relative;
+ 
+  max-width: 80%;
+    max-height: auto;
+ 
+  
+     
+}
+
+menu{
+
+}
+.about,.projects,.contact{
+    position:relative;
+max-width: 60%;
+    max-height: auto;
+    
+
+}
+.again{
+position:relative;
+  max-width: 80%;
+    max-height: auto;
+ 
+
+}
+
+.oncemore{
+position:relative;
+  max-width: 80%;
+    max-height: auto;
+ 
+
+}
+.butn{
+    position: relative;
+webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+    padding:none;
+    
+}
+
+.butn:active{
+
+    position:relative;
+    top:2px;
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+   
+}
+
+.butn2{
+    visibility: hidden;
+
+}
+
+.butn2:active{
+
+    position:relative;
+    top:2px;
+   
+}
+.butn3{
+     position: relative;
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+    visibility: hidden;
+
+}
+
+.butn3:active{
+
+    position:relative;
+    top:2px;
+   
+}
+.butn4{
+    visibility: hidden;
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+}
+
+.butn4:active{
+
+    position:relative;
+    top:2px;
+   
+}
+.butn5{
+    visibility: hidden;
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+}
+
+.butn5:active{
+
+    position:relative;
+    top:2px;
+   
+}
+.butn6{
+    visibility: hidden;
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+}
+
+.butn6:active{
+
+    position:relative;
+    top:2px;
+   
+}
