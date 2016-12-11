@@ -4,7 +4,8 @@
     <title>
         Tamar's Site
         </title>
-     
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
     <link href="style.css" rel="stylesheet" type="text/css">
     <script
   src="https://code.jquery.com/jquery-3.1.1.js"
@@ -22,7 +23,7 @@
     button 6: contact
     -->
         
-    
+    <div id="wrapper">
         <script language="javascript">
             window.onload = function(){
             var button1=document.getElementById("button1"); 
@@ -31,27 +32,71 @@
             var button3=document.getElementById("button3");
             var button4=document.getElementById("button4"); 
                  var button5=document.getElementById("button5"); 
-                 var button6=document.getElementById("button6"); 
+                 var button6=document.getElementById("button6");
+                var button7=document.getElementById("button7");
+               
+                var aboutpage=document.getElementById("aboutpage");
+                
+                var working = 0;
+                
             button1.onclick = function(){
-            button2.style.visibility="visible";
-            button3.style.visibility="visible";
+            button2.style.display="block";
+            button3.style.display="block";
             button1.style.display="none";
-                  arrow.style.visibility="hidden";
+                  arrow.style.display="none";
             
             }
             
             button3.onclick = function(){
-            button4.style.visibility="visible";
-            button5.style.visibility="visible";
-            button3.style.display="none";     
+                button4.style.display="block";
+                button5.style.display="block";
+                button3.style.display="none";     
             }
             
             button5.onclick = function(){
            
-            button6.style.visibility="visible";
+                button6.style.display="block";
+                button7.style.display="block";
           
-                 button5.style.display="none"; 
+                button5.style.display="none"; 
+                working=1;
+                console.log(working);
+               
             }
+            
+           $('#button2').click(function (){
+         
+                document.body.style.backgroundColor="#ffcacc";
+               $('#projectspage').hide();
+            $('#aboutpage').fadeIn('slow');
+              
+            
+            });
+            
+                  $('#button4').click(function (){
+            
+                $('#aboutpage').hide();
+                      $('#projectspage').fadeIn('slow');
+            document.body.style.backgroundColor="#bc99cc";
+              
+            
+            });
+                
+                 $('#button6').click(function (){
+         
+            document.body.style.backgroundColor="#b9ebff";
+              
+            
+            });
+                
+                  $('#button7').click(function (){
+         
+            document.body.style.backgroundColor="#beffb5";
+              
+            
+            });
+                
+               
             
             }
         </script>
@@ -59,6 +104,7 @@
        
          <img src="images/note.png" class="note" id="arrow">
              </div>
+       
         <div class="suggest">
        
         <a  class="butn">
@@ -80,21 +126,67 @@
 
          </div>
         
-        <div class="menu">
+        <!-- MENU -->
+        
+          <div class= "container-fluid">       
+              <div class="row">
+                 <div class="col-xs-2 col-md-3">   
         <a class="butn2" id="button2">
-        <img src="images/about.png" class="about">
-        
+        <img src="images/aboutme1.png" class="about">
          </a> 
-        <a class="butn4" id="button4">
-        <img src="images/projects.png" class="projects">
-        
+                  </div>
+          
+            
+                      <div class="col-xs-2 col-md-3">   
+        <a class="butn4" id="button4">         
+        <img src="images/projects1.png" class="projects">
          </a> 
-         </a> 
+                    </div>   
+                 
+                 <div class="col-xs-2 col-md-3"> 
         <a class="butn6" id="button6">
-        <img src="images/contact.png" class="contact">
-        
+        <img src="images/resume1.png" class="resume">
+              
          </a> 
+                    </div>
+                  
+                   <div class="col-xs-2 col-md-3"> 
+        <a class="butn7" id="button7">
+        <img src="images/contact1.png" class="contact">
+              
+         </a> 
+                    </div>
+                  
+         </div>    
+       
+                 </div>
+      
+        <div class="about-page" id="aboutpage">
+            <div class="parent" style="position: relative; left: 0; top: 0;">
+        <img src="images/screen1.png" class="screen">
+                <h1>
+                a photograph of Tamar Palgon in her natural habitat
+                </h1>
+               <p1>
+                   
+                 is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+                </p1>
+       <img src="images/rounded_corners.jpg" class="me"> 
+                
         </div>
+        </div>
+       
+        <div class="projects-page" id="projectspage">
+             <div class="parent" style="position: relative; left: 0; top: 0;">
+        <img src="images/screen1.png" class="screen">
+         </div>
+        
+        </div>
+          
+           </div> <!-- wrapper-->
+        
     </body>
 
 
