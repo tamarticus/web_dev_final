@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>
         Tamar's Site
-        </title>
-     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-       
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
     <!--button 1:click me
     button 2: about me
     button 3: again!
@@ -22,172 +22,378 @@
     button 5: once more 
     button 6: contact
     -->
-        
+
     <div id="wrapper">
         <script language="javascript">
-            window.onload = function(){
-            var button1=document.getElementById("button1"); 
-            var button2=document.getElementById("button2");
-            var arrow=document.getElementById("arrow");
-            var button3=document.getElementById("button3");
-            var button4=document.getElementById("button4"); 
-                 var button5=document.getElementById("button5"); 
-                 var button6=document.getElementById("button6");
-                var button7=document.getElementById("button7");
-               
-                var aboutpage=document.getElementById("aboutpage");
-                
+            window.onload = function() {
+                var button1 = document.getElementById("button1");
+                var button2 = document.getElementById("button2");
+                var arrow = document.getElementById("arrow");
+                var button3 = document.getElementById("button3");
+                var button4 = document.getElementById("button4");
+                var button5 = document.getElementById("button5");
+                var button6 = document.getElementById("button6");
+                var button7 = document.getElementById("button7");
+
+                var aboutpage = document.getElementById("aboutpage");
+
                 var working = 0;
-                
-            button1.onclick = function(){
-            button2.style.display="block";
-            button3.style.display="block";
-            button1.style.display="none";
-                  arrow.style.display="none";
-            
+
+                button1.onclick = function() {
+                    button2.style.display = "block";
+                    button3.style.display = "block";
+                    button1.style.display = "none";
+                    arrow.style.display = "none";
+
+                }
+
+                button3.onclick = function() {
+                    button4.style.display = "block";
+                    button5.style.display = "block";
+                    button3.style.display = "none";
+                }
+
+                button5.onclick = function() {
+
+                    button6.style.display = "block";
+                    button7.style.display = "block";
+
+                    button5.style.display = "none";
+                    working = 1;
+                    console.log(working);
+
+                }
+
+                $('#button2').click(function() {
+
+                    document.body.style.backgroundColor = "#ffcacc";
+                    $('#projectspage').hide();
+                    $('#contactpage').hide();
+                    $('#resumepage').hide();
+                    $('#aboutpage').fadeIn('slow');
+
+
+                });
+
+                $('#button4').click(function() {
+                    $('#contactpage').hide();
+                    $('#resumepage').hide();
+                    $('#aboutpage').hide();
+                    $('#projectspage').fadeIn('slow');
+                    document.body.style.backgroundColor = "#bc99cc";
+
+
+                });
+
+                $('#button6').click(function() {
+                    $('#resumepage').fadeIn('slow');
+                    $('#contactpage').hide();
+                    $('#projectspage').hide();
+                    $('#aboutpage').hide();
+                    document.body.style.backgroundColor = "#b9ebff";
+
+
+                });
+
+                $('#button7').click(function() {
+                    $('#contactpage').fadeIn('slow');
+                    $('#resumepage').hide();
+                    $('#projectspage').hide();
+                    $('#aboutpage').hide();
+                    document.body.style.backgroundColor = "#beffb5";
+
+
+                });
+
+
+
             }
-            
-            button3.onclick = function(){
-                button4.style.display="block";
-                button5.style.display="block";
-                button3.style.display="none";     
-            }
-            
-            button5.onclick = function(){
-           
-                button6.style.display="block";
-                button7.style.display="block";
-          
-                button5.style.display="none"; 
-                working=1;
-                console.log(working);
-               
-            }
-            
-           $('#button2').click(function (){
-         
-                document.body.style.backgroundColor="#ffcacc";
-               $('#projectspage').hide();
-            $('#aboutpage').fadeIn('slow');
-              
-            
-            });
-            
-                  $('#button4').click(function (){
-            
-                $('#aboutpage').hide();
-                      $('#projectspage').fadeIn('slow');
-            document.body.style.backgroundColor="#bc99cc";
-              
-            
-            });
-                
-                 $('#button6').click(function (){
-         
-            document.body.style.backgroundColor="#b9ebff";
-              
-            
-            });
-                
-                  $('#button7').click(function (){
-         
-            document.body.style.backgroundColor="#beffb5";
-              
-            
-            });
-                
-               
-            
-            }
+
         </script>
         <div class="message">
-       
-         <img src="images/note.png" class="note" id="arrow">
-             </div>
-       
+
+            <img src="images/note.png" class="note" id="arrow">
+        </div>
+
         <div class="suggest">
-       
-        <a  class="butn">
-    
-        <img src="images/button.png" class="click" id="button1">
-        </a>
-           
-        
-        <a class="butn3" id="button3">
-        <img src="images/again.png" class="again">
-        
-               
 
-        </a> 
+            <a class="butn">
+
+                <img src="images/button.png" class="click" id="button1">
+            </a>
+
+
+            <a class="butn3" id="button3">
+                <img src="images/again.png" class="again">
+
+
+
+            </a>
             <a class="butn5" id="button5">
-        <img src="images/oncemore.png" class="oncemore">
-        
-         </a> 
+                <img src="images/oncemore.png" class="oncemore">
 
-         </div>
-        
+            </a>
+
+        </div>
+
         <!-- MENU -->
-        
-          <div class= "container-fluid">       
-              <div class="row">
-                 <div class="col-xs-2 col-md-3">   
-        <a class="butn2" id="button2">
-        <img src="images/aboutme1.png" class="about">
-         </a> 
-                  </div>
-          
-            
-                      <div class="col-xs-2 col-md-3">   
-        <a class="butn4" id="button4">         
-        <img src="images/projects1.png" class="projects">
-         </a> 
-                    </div>   
-                 
-                 <div class="col-xs-2 col-md-3"> 
-        <a class="butn6" id="button6">
-        <img src="images/resume1.png" class="resume">
-              
-         </a> 
-                    </div>
-                  
-                   <div class="col-xs-2 col-md-3"> 
-        <a class="butn7" id="button7">
-        <img src="images/contact1.png" class="contact">
-              
-         </a> 
-                    </div>
-                  
-         </div>    
-       
-                 </div>
-      
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-1 col-sm-3 nopad">
+                    <a class="butn2" id="button2">
+                        <img src="images/aboutme1.png" class="about">
+                    </a>
+                </div>
+
+
+                <div class="col-xs-1 col-sm-3">
+                    <a class="butn4" id="button4">
+                        <img src="images/projects1.png" class="projects">
+                    </a>
+                </div>
+
+                <div class="col-xs-1 col-sm-3">
+                    <a class="butn6" id="button6">
+                        <img src="images/resume1.png" class="resume">
+
+                    </a>
+                </div>
+
+                <div class="col-xs-1 col-sm-3">
+                    <a class="butn7" id="button7">
+                        <img src="images/contact1.png" class="contact">
+
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="about-page" id="aboutpage">
             <div class="parent" style="position: relative; left: 0; top: 0;">
-        <img src="images/screen1.png" class="screen">
+                <img src="images/screen1.png" class="screen" id="aboutscreen">
                 <h1>
                 a photograph of Tamar Palgon in her natural habitat
                 </h1>
-               <p1>
-                   
-                 is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <p1>
+                    <span style="color:#a64145; font-size:25px; font-weight:bold">Hey There,</span>
+                    </br>
+                    </br>
+                    I am Tamar Palgon, and this is my site! I am currently an undergraduate student at NYU Tandon, studying Integrated Digital Media.
 
-
+                    </br>
+                    </br>
+                    I'm interested in sound and film production, animation, coding, and all things digital. Check out some of my past Digital Media projects under the Projects tab.
+                    </br>
+                    </br>
                 </p1>
-       <img src="images/rounded_corners.jpg" class="me"> 
-                
+                <img src="images/rounded_corners.png" class="me">
+
+            </div>
         </div>
-        </div>
-       
+        <!-- PROJECTS-->
         <div class="projects-page" id="projectspage">
-             <div class="parent" style="position: relative; left: 0; top: 0;">
-        <img src="images/screen1.png" class="screen">
-         </div>
-        
+            <div class="parent" style="position: relative; left: 0; top: 0;">
+                <img src="images/screen1.png" class="screen" id="projectscreen">
+                <div class="container-fluid" id="projectlist">
+                    <div class="row buffer">
+                        <div class="col-sm-3">
+                            <a href="http://sites.bxmc.poly.edu/~tamarpalgon/Midterm_Beginning/text.html" target="_blank" style="text-decoration: none;">
+                                <img src="images/froground.png" class="frog">
+                                <div class="category">
+
+                                    Coding
+                                </div>
+
+                                <div class="descriptor">
+                                    Build-a-Frog Website
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://github.com/tamarticus/Final_Project" target="_blank" style="text-decoration: none;">
+                                <img src="images/weirduncleround.png" class="uncle">
+                                <div class="category">
+                                    Coding
+                                </div>
+                                <div class="descriptor">
+                                    Weird Uncle Game
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://vimeo.com/195218820" target="_blank" style="text-decoration: none;">
+                                <img src="images/santaround.png" class="santa">
+                                <div class="category">
+                                    Film
+                                </div>
+                                <div class="descriptor">
+                                    Amazing Grace
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://vimeo.com/191419615" target="_blank" style="text-decoration: none;">
+                                <img src="images/pokerround.png" class="poker">
+                                <div class="category">
+                                    Film
+                                </div>
+                                <div class="descriptor">
+                                    Poker Face
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row buffer">
+                        <div class="col-sm-3">
+                            <a href="https://www.youtube.com/watch?v=ZLPL-jWFolg" target="_blank" style="text-decoration: none;">
+                                <img src="images/gagaround.png" class="gaga">
+                                <div class="category">
+                                    Film
+                                </div>
+                                <div class="descriptor">
+                                    Gaga: The Movie
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://soundcloud.com/tamar-palgon/rote" target="_blank" style="text-decoration: none;">
+                                <img src="images/roteround.png" class="rote">
+                                <div class="category">
+                                    Music
+                                </div>
+                                <div class="descriptor">
+                                    Rote
+                            </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://soundcloud.com/tamar-palgon/oh-no" target="_blank" style="text-decoration: none;">
+                                <img src="images/moultround.png" class="moult">
+                                <div class="category">
+                                    Music
+                                </div>
+                                <div class="descriptor">
+                                    Moult
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://soundcloud.com/tamar-palgon/jonny-likes-me" target="_blank" style="text-decoration: none;">
+                                <img src="images/jonnyround.png" class="jonny">
+                                <div class="category">
+                                    Music
+                                </div>
+                                <div class="descriptor">
+                                    Jonny Likes Me
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-          
-           </div> <!-- wrapper-->
-        
-    </body>
+        <!--RESUME-->
+        <div class="resume-page" id="resumepage">
+            <div class="parent" style="position: relative; left: 0; top: 0;">
+                <img src="images/screen2.png" class="screen" id="resumescreen">
+                <p2>
+                    <span style="color: #1b4556; font-size: 20px; font-weight:bold; margin-left: -8%;"> Education</span>
+
+
+                    </br>
+                    New York University, Class of 2018
+                    </br>
+                    Integrated Digital Media Major
+                    </br>
+                    </br>
+                    <span style="color: #1b4556; font-size: 20px; font-weight:bold; margin-left: -8%;">Honors</span>
+
+
+                    </br>
+                    Slam Poetry: Best Poet (2013), Best Poet Runner-Up (2012, 2013),
+                    </br>
+                    Best Free Verse Poem (2013), Best Poem (2013)
+                    </br>
+                    Academic Award: English (2014)
+                    </br>
+                    Josh Goldfaden Award (2016)
+                    </br>
+                    </br>
+                    <span style="color: #1b4556; font-size: 20px; font-weight:bold; margin-left: -8%;">Activities/Skills</span>
+                    </br>
+                    Some basic coding skills (html, css, Java, JavaScript)
+                    </br>
+                    Proficient in Final Cut, iMovie, Photoshop, and Pro Tools
+                    </br>
+                    Video making, animation
+                    </br>
+                    Guitar (6 years), Ukulele (2 years)
+                    </br>
+                    Editor-in-chief of literary magazine (2013, 2014)
+                    </br>
+                    </br>
+                    <span style="color: #1b4556; font-size: 20px; font-weight:bold; margin-left: -8%;">Volunteer and Work Experience</span>
+                    </br>
+                    Created an advertisement for a Pilates studio (2012)
+                    </br>
+                    </br>
+                    Volunteered with various organizations in Portland, Oregon for three weeks in 2013 (different jobs including painting houses, gardening, and building, learned about sustainability)
+                    </br>
+                    </br>
+                    Volunteered to help coordinate the Columbia University Dance Marathon, an event aimed towards raising money and awareness for the Elizabeth Glaser Pediatric AIDS foundation (2014)
+                    </br>
+                    </br>
+                    Intern at Deetown Entertainment (Winter 2015)
+                    </br>
+                    </br>
+                    Photographer, sports counselor, and video club leader in Moshava Bair Day Camp (Summer 2015)
+                    </br>
+                    </br>
+                    Counselor at Moshava Bair Day Camp (Summer 2016)
+
+                </p2>
+            </div>
+        </div>
+        <!--CONTACT-->
+        <!--SOURCE: edited/restyled from https://codepen.io/rexkirby/pen/Fdnlz-->
+        <div class="contact-page" id="contactpage">
+            <div class="parent" style="position: relative; left: 0; top: 0;">
+
+                <div id="form-main">
+                    <div id="form-div">
+                        <form class="form" id="form1" action="https://formspree.io/tamar.palgon@gmail.com" method="POST">
+
+                            <p class="name">
+                                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                            </p>
+
+                            <p class="email">
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                            </p>
+
+                            <p class="text">
+                                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                            </p>
+
+
+                            <div class="submit">
+                                <input type="submit" value="SEND" id="button-blue" />
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- wrapper-->
+
+</body>
 
 
 </html>
