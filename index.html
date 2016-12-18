@@ -10,7 +10,6 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 
-    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -41,28 +40,16 @@
 
                 button1.onclick = function() {
                     button2.style.display = "block";
-                    button3.style.display = "block";
+                    button4.style.display = "block";
+                    button6.style.display = "block";
+                    button7.style.display = "block";
+
                     button1.style.display = "none";
                     arrow.style.display = "none";
 
                 }
 
-                button3.onclick = function() {
-                    button4.style.display = "block";
-                    button5.style.display = "block";
-                    button3.style.display = "none";
-                }
 
-                button5.onclick = function() {
-
-                    button6.style.display = "block";
-                    button7.style.display = "block";
-
-                    button5.style.display = "none";
-                    working = 1;
-                    console.log(working);
-
-                }
 
                 $('#button2').click(function() {
 
@@ -123,24 +110,15 @@
             </a>
 
 
-            <a class="butn3" id="button3">
-                <img src="images/again.png" class="again">
 
-
-
-            </a>
-            <a class="butn5" id="button5">
-                <img src="images/oncemore.png" class="oncemore">
-
-            </a>
 
         </div>
 
         <!-- MENU -->
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-1 col-sm-3 nopad">
+            <div class="row no-gutter">
+                <div class="col-xs-1 col-sm-3">
                     <a class="butn2" id="button2">
                         <img src="images/aboutme1.png" class="about">
                     </a>
