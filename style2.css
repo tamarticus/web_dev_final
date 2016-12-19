@@ -10,6 +10,10 @@ body {
     margin-right: auto;
     width: 960px;
 }
+
+#wrapper2{
+
+}
 .note {
     width: 25%;
     height: auto;
@@ -109,14 +113,29 @@ body {
     top: 2px;
     left: 2px;
 }
+
+
 .about-page {
     display: none;
+    width: 100%;
+    height: 580px;
+    border-radius:22px;
+    background-color: white;
 }
 .projects-page {
     display: none;
+     width: 100%;
+    height: 580px;
+    border-radius:22px;
+    background-color: white;
+   
 }
 .resume-page {
     display: none;
+     width: 100%;
+    height: 950px;
+    border-radius:22px;
+    background-color: white;
 }
 .contact-page {
     display: none;
@@ -152,6 +171,7 @@ h1 {
     font-family: "noteworthy";
 }
 #projectlist {
+    
     position: absolute;
     top: 4.5%;
 }
@@ -266,6 +286,28 @@ p2 {
     .col-sm-3{
     width:;
     }
+    .about-page {
+    display: none;
+    width: 100%;
+    height: 580px;
+    border-radius:22px;
+    background-color: white;
+}
+.projects-page {
+    display: none;
+     width: 100%;
+    height: 580px;
+    border-radius:22px;
+    background-color: white;
+   
+}
+.resume-page {
+    display: none;
+     width: 100%;
+    height: 950px;
+    border-radius:22px;
+    background-color: white;
+}
 }
 @media(max-width: 767px){
     .no-gutter > [class*='col-'] {
@@ -291,9 +333,13 @@ p2 {
     #projectscreen {
 display:none;
     }
+ 
     #projectlist {
+     
         align-content: center;
+      
     }
+   
     p2 {
         position: absolute;
         top: 4.5%;
@@ -326,6 +372,28 @@ display:none;
     width: 100%;
     height: 1300px;
     }
+    .about-page {
+    display: none;
+    width: 60%;
+    height: 580px;
+    border-radius:22px;
+    background-color: white;
+}
+.projects-page {
+    display: none;
+     width: 45%;
+    height: 3100px;
+    border-radius:22px;
+    background-color: white;
+   
+}
+.resume-page {
+    display: none;
+     width: 100%;
+    height: 950px;
+    border-radius:22px;
+    background-color: white;
+}
 
 
 }
