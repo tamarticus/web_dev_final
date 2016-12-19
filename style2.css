@@ -205,17 +205,25 @@ a {
 }
 .category {
     color: #632f7a;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "noteworthy";
-    font-weight: bold;
+
     text-align: center;
     margin-bottom: 5px;
 }
 .descriptor {
-    font-size: 16px;
+        font-weight: bold;
+    font-size: 18px;
     font-family: "noteworthy";
     text-align: center;
 }
+.projects-page a:hover{
+  color: #632f7a;
+}
+.resume-page a:hover{
+  color: #b9ebff;
+}
+
 p2 {
     position: absolute;
     top: 4.5%;

@@ -185,14 +185,14 @@ a {
 }
 .category {
     color: #632f7a;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "noteworthy";
     font-weight: bold;
     text-align: center;
     margin-bottom: 5px;
 }
 .descriptor {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "noteworthy";
     text-align: center;
 }
